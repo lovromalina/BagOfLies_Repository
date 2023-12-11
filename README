@@ -1,0 +1,33 @@
+# Bag of Lies Dataset
+
+This is organised as follows:
+├── User_0
+│   ├── run_0
+│   │   ├── EEG.csv
+│   │   ├── Gaze.csv
+│   │   ├── image.jpg
+│   │   └── video.mp4
+│   ├── run_1
+│   │   ├── EEG.csv
+│   │   ├── Gaze.csv
+│   │   ├── image.jpg
+│   │   └── video.mp4
+├── User_1
+│   ├── run_0
+│   │   ├── EEG.csv
+│   │   ├── Gaze.csv
+│   │   ├── image.jpg
+│   │   └── video.mp4
+│   ├── run_1
+│   │   ├── EEG.csv
+│   │   ├── Gaze.csv
+│   │   ├── image.jpg
+│   │   └── video.mp4
+...
+
+Data from every user is organised into folders with format ``User_<user_number>``.  
+For every user, the folder contains ``run_<run_number>``. Every run has 3-4 components,
+- EEG.csv : Has EEG Data
+- Gaze.csv : Has Gaze Data
+- image.jpg : The image shown to participant
+- video.mp4 : The video recording of the participant
