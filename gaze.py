@@ -8,6 +8,7 @@ from sklearn.impute import SimpleImputer
 import random
 
 
+
 anno = pd.read_csv("Annotations.csv")
 
 original_lengths = []
@@ -30,6 +31,8 @@ for gaze_path in anno['gaze']:
 
     gaze_dataframe['CNT'] = pd.to_datetime(gaze_dataframe['CNT'], unit='s')
     gaze_dataframe.set_index('CNT', inplace=True)
+
+    gaze_dataframe.interpolate(method='linear', inplace=True)
 
     target_rows = 540
 

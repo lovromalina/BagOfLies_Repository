@@ -19,7 +19,7 @@ X = imputer.fit_transform(X)
 avg_accuracy = 0
 sum_accuracy = 0
 
-for i in range(1, 2):
+for i in range(1, 250):
 
     random_int = random.randint(0, 1000)
 
@@ -28,7 +28,7 @@ for i in range(1, 2):
     #print(X_train)
 
 
-    rf_classifier = RandomForestClassifier(n_estimators=300, max_depth=3, random_state=random_int)
+    rf_classifier = RandomForestClassifier(n_estimators=500, max_depth=5, random_state=random_int)
 
 
     rf_classifier.fit(X_train, y_train)
